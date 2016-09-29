@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta charset="UTF-8">
+		<title>UPMA</title>
+		<link rel="stylesheet" href="assets/stylesheets/main.css"> <link rel="stylesheet" href="assets/stylesheets/angular-chart.css">
+		<link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
+		<!--The Below disables most backspace navigation (because it's really annoying)-->
+		<script type="text/javascript">window.onkeydown = function (e) {
+			if (e.keyCode == 8 && e.target == document.body)
+				e.preventDefault();
+		};
+		</script>
+	</head>
+	<body ng-app="MainApp" autoscroll id="entireBody" ng-cloak>
+
+		<div class="fullHeight" ui-view></div>
+
+
+		<!-- Remote Google APIs, should be replaced with static version on roll-out -->
+		<script src="plugins/angular/angular.js"></script>
+
+		<!-- Angular ui-router plugin-->
+		<script src="plugins/ui-bootstrap/ui-bootstrap-tpls-2.1.4.js"></script>
+
+		<!-- Angular ui-router plugin-->
+		<script src="plugins/ui-router/angular-ui-router.js"></script>
+
+		<!-- Chart.js and Angular Chart.js for fluid chart building.-->
+		<script src="plugins/chart/chart.js"></script>
+		<script src="plugins/chart/angular-chart.js"></script>
+
+		<!-- Angular App, Controller, and Directives-->
+		<script src="modules/MainApp/app.js"></script>
+		<script src="modules/MainApp/main.ctrl.js"></script>
+
+
+
+	</body>
+</html>

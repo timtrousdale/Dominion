@@ -1,0 +1,26 @@
+{
+  "name": "member",
+  "version": "1.0.0",
+  "description": "Member UI for UPMA Website",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://timtrousdale@bitbucket.org/upmaorg/member.git"
+  },
+  "author": "Tim Trousdale",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/upmaorg/member#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.5.0",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  }
+}
