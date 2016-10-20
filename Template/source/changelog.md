@@ -386,3 +386,13 @@
 > Release Date : 8th September 2016
 
 - Updated angular material to 1.1.1
+
+## Version 2.11.0
+> Release Date : 18th October 2016
+
+- Fixed karma testing gulp
+- Fixed seed-module load order
+- New improved form wizard (fixes already filled in form)
+- Improved Docs
+- New Chart Library added angular-nvd3
+- New Analytics Dashboard!

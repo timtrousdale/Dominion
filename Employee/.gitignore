@@ -1,6 +1,0 @@
-/.idea/tasks.xml
-/.idea/workspace.xml
-/vendor/
-/logs/*
-/node_modules/**
-!/logs/README.md

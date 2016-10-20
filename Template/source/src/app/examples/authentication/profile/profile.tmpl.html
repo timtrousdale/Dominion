@@ -3,7 +3,7 @@
         <img src="assets/images/avatars/avatar-5.png" alt="girl-avatar" class="make-round" width="100"/>
     </div>
     <div class="text-light">
-        <h3 class="font-weight-600 margin-bottom-0 text-light">Christos / Profile</h3>
+        <h3 class="font-weight-600 margin-bottom-0 text-light">Larry Hilton / Profile</h3>
         <p class="font-weight-300 margin-top-0">Edit your name, avatar etc</p>
      </div>
 </div>
@@ -44,12 +44,12 @@
                             <input id="website" label="website" name="website" type="text" ng-model="vm.user.website"/>
                         </md-input-container>
 
-                        <md-input-container class="md-block">
+                        <md-input-container class="md-block" ng-show="vm.user.twitter">
                             <label for="twitter" translate>twitter</label>
                             <input id="twitter" label="twitter" name="twitter" type="text" ng-model="vm.user.twitter"/>
                         </md-input-container>
 
-                        <md-input-container class="md-block">
+                        <md-input-container class="md-block" ng-show="vm.user.twitter">
                             <label for="bio" translate>bio</label>
                             <textarea id="bio" label="bio" name="bio" ng-model="vm.user.bio"/>
                         </md-input-container>
@@ -83,21 +83,21 @@
                     </form>
                 </md-content>
             </md-tab>
-            <md-tab label="Notifications">
-                <md-content class="md-padding">
-                    <md-list>
-                        <div ng-repeat="group in ::vm.settingsGroups">
-                            <md-subheader class="md-accent" translate="{{::group.name}}"></md-subheader>
-                            <md-list-item ng-repeat="setting in ::group.settings" layout="row" layout-align="space-around center">
-                                <md-icon md-font-icon="{{::setting.icon}}"></md-icon>
-                                <p translate>{{::setting.title}}</p>
-                                <md-switch class="md-secondary" ng-model="setting.enabled"></md-switch>
-                            </md-list-item>
-                        </div>
-                    </md-list>
-                    <md-button class="md-raised md-primary margin-left-0" ng-disabled="profile.$invalid" translate="Update Settings"></md-button>
-                </md-content>
-            </md-tab>
+            <!--<md-tab label="Notifications">-->
+                <!--<md-content class="md-padding">-->
+                    <!--<md-list>-->
+                        <!--<div ng-repeat="group in ::vm.settingsGroups">-->
+                            <!--<md-subheader class="md-accent" translate="{{::group.name}}"></md-subheader>-->
+                            <!--<md-list-item ng-repeat="setting in ::group.settings" layout="row" layout-align="space-around center">-->
+                                <!--<md-icon md-font-icon="{{::setting.icon}}"></md-icon>-->
+                                <!--<p translate>{{::setting.title}}</p>-->
+                                <!--<md-switch class="md-secondary" ng-model="setting.enabled"></md-switch>-->
+                            <!--</md-list-item>-->
+                        <!--</div>-->
+                    <!--</md-list>-->
+                    <!--<md-button class="md-raised md-primary margin-left-0" ng-disabled="profile.$invalid" translate="Update Settings"></md-button>-->
+                <!--</md-content>-->
+            <!--</md-tab>-->
         </md-tabs>
     </div>
 

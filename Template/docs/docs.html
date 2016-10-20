@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-        <title>triangular 2.10.1 | Support</title>
+        <title>triangular 2.11.0 | Support</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="yes" name="apple-mobile-web-app-capable">
         <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico" />
@@ -21,7 +21,7 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" alt="" />
             </a>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand hidden-sm-down" href="index.html">
         triangular
     </a>
             <ul class="nav navbar-nav pull-right">
@@ -52,7 +52,7 @@
         </nav>
         <div class="container-fluid">
             <div class="row">
-                <div class="oxy-docs-sidebar col-md-3 sidebar-fixed">
+                <div class="oxy-docs-sidebar col-md-3 sidebar-fixed hidden-sm-down">
                     <nav id="sidenav" role="navigation" class="oxy-docs-sidebar-nav">
                         <h5 class="oxy-docs-sidebar-nav__section-heading">Introduction</h5>
                         <ul class="nav">
@@ -1455,7 +1455,7 @@ triLayoutProvider.setDefaultOption(<span class="string">'loaderController'</span
                     </ul>
                     <h2 id="creating-your-own-module">Creating your own module</h2>
                     <p>In order to make creating a module for your work as easy as possible we have created a simple seed module to get started.</p>
-                    <p>You can find the code in <code>app/seed-module</code></p>
+                    <p>You can find the code in <code>app/seed-module</code>. The seed module is not active by default, you will have to uncomment the line of code that includes it as a dependency in <code>app/app.module.js</code></p>
                     <p>To create your own module just make a copy of this folder and rename it to your new module name.</p>
                     <p>After that rename the module to your new module name and then add it to the dependencies in app.module.js</p>
                     <h2 id="removing-a-module">Removing a module</h2>
@@ -1482,7 +1482,7 @@ triLayoutProvider.setDefaultOption(<span class="string">'loaderController'</span
         ]);
 })();</code></pre>
                     <p>For example if you wanted to remove the authentication pages (login, forgot password, etc) you would want to remove the triangular authentication package.</p>
-                    <p>So you would remove this nine</p>
+                    <p>So you would remove this line</p>
                     <pre><code class="language-javascript"><span class="string">'app.examples.authentication'</span>,</code></pre>
                     <p>This will stop the example authentication module in the authentication folder from being loaded and remove the menu and pages.</p>
                     <h1 id="directives">Directives</h1>
@@ -1605,7 +1605,7 @@ triLayoutProvider.setDefaultOption(<span class="string">'loaderController'</span
                     <p>We will use the popular <a href="http://www.slimframework.com/">Slim</a> php framework to set up a simple server. The server will allow cross-origin requests, in order to allow our app to contact it even if they reside on different domains.</p>
                     <ul>
                         <li>Create a folder named api at the root of your web server directory in your localhost.</li>
-                        <li>Download the slim framework from <a href="https://github.com/slimphp/Slim/releases">here</a> in zip format. At the time of writing this guide, the current framework version is 2.6.2.</li>
+                        <li>Download the slim framework from <a href="https://github.com/slimphp/Slim/releases">here</a> in zip format. At the time of writing this guide, the current framework version is 3.5.0.</li>
                         <li>Extract the downloaded archive and copy the folder named Slim that you will find, inside your api folder that you created in step 1.</li>
                         <li>Create two files inside your api folder: index.php and .htaccess</li>
                         <li>Paste the following in the index.php:</li>
@@ -1675,7 +1675,7 @@ Access-Control-Allow-Headers: accept, origin, content-type
                     <p>Or if you have the skills you can always grab the MaterialAvatars.ai file and edit it yourself in Adobe Illustrator.</p>
                     <h2 id="material-font">Material Font</h2>
                     <p>In the material-font folder you will find our set of material font characters.</p>
-                    <p>We have proivded a full alphabet and number set of images.</p>
+                    <p>We have provided a full alphabet and number set of images.</p>
                     <p>Or if you prefer you can always open the material-font.ai in Adobe Illustrator and modify the font as you like.</p>
                     <h2 id="psd-files">PSD files</h2>
                     <p>In the PSD folder you will find the PSD design file for the triangular template.</p>

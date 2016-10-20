@@ -40,12 +40,12 @@
             }]
         }];
         vm.user = {
-            name: 'Christos',
-            email: 'info@oxygenna.com',
-            location: 'Sitia, Crete, Greece',
-            website: 'http://www.oxygenna.com',
-            twitter: 'oxygenna',
-            bio: 'We are a small creative web design agency \n who are passionate with our pixels.',
+            name: 'Larry Hilton',
+            email: 'larry.hilton@dominioninsurance.com',
+            location: 'Alpine, UT',
+            website: 'http://www.dominion-insurance.com',
+            // twitter: 'oxygenna',
+            // bio: 'We are a small creative web design agency \n who are passionate with our pixels.',
             current: '',
             password: '',
             confirm: ''
